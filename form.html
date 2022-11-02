@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./formwala.css">
+    
+    <script src="./filter.js"></script>
+    
+    <title>jobs here</title>
+</head>
+
+<body>
+   
+    
+    
+    <table id="emp-table" width>
+        <thead>
+            <th col-index = 1>Salary (Rs)</th>
+            <th col-index = 2>Remote 
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+
+            <th col-index = 3>Company
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+            <th col-index = 4>Position
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+            <th col-index = 5>Job for
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+            <th col-index = 1>Actions</th>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td>10000</td>
+                <td>Yes</td>
+                <td>Google</td>
+                <td>Software developer</td>
+                <td>Deaf</td>
+                <td><center><button class="Apply" style=" 
+                    background-color: #f0800c; 
+                    border: none;
+                    color: white;
+                    padding: 15px 15px;
+                    text-align: center;
+                    text-decoration: none;
+                   
+                    font-size: 12px;
+                  ">Apply now!</button></center></td>
+            </tr>
+            <tr>
+                <td>10200</td>
+                <td>No</td>
+                <td>Bnks</td>
+                <td>Head incharge</td>
+                <td>Deaf</td>
+                <td><center><button class="Apply" style=" 
+                    background-color: #f0800c; 
+                    border: none;
+                    color: white;
+                    padding: 15px 15px;
+                    text-align: center;
+                    text-decoration: none;
+                   
+                    font-size: 12px;
+                  ">Apply now!</button></center></td>
+            </tr>
+            <tr>
+                <td>90003</td>
+                <td>Yes</td>
+                <td>Microsoft</td>
+                <td>Project treasurer</td>
+                <td>Blind</td>
+                <td><center><button class="Apply" style=" 
+                    background-color: #f0800c; 
+                    border: none;
+                    color: white;
+                    padding: 15px 15px;
+                    text-align: center;
+                    text-decoration: none;
+                   
+                    font-size: 12px;
+                  ">Apply now!</button></center></td>
+            </tr>
+            <tr>
+                <td>234234</td>
+                <td>Yes</td>
+                <td>Nepal pasa school</td>
+                <td>Head of department</td>
+                <td>Deaf</td>
+                <td><center><button class="Apply" style=" 
+                    background-color: #f0800c; 
+                    border: none;
+                    color: white;
+                    padding: 15px 15px;
+                    text-align: center;
+                    text-decoration: none;
+                   
+                    font-size: 12px;
+                  ">Apply now!</button></center></td>
+
+            </tr>
+            <tr>
+                <td>20100</td>
+                <td>No</td>
+                <td>Leap</td>
+                <td>Ceo</td>
+                <td>Deaf</td>
+                <td><center><button class="Apply" style=" 
+                    background-color: #f0800c; 
+                    border: none;
+                    color: white;
+                    padding: 15px 15px;
+                    text-align: center;
+                    text-decoration: none;
+                   
+                    font-size: 12px;
+                  ">Apply now!</button></center></td>
+            </tr>
+            <tr>
+                <td>1000000</td>
+                <td>Yes</td>
+                <td>NEC</td>
+                <td>Teacher</td>
+                <td>Wheelchaired</td>
+                <td><center><button class="Apply" style=" 
+                    background-color: #f0800c; 
+                    border: none;
+                    color: white;
+                    padding: 15px 15px;
+                    text-align: center;
+                    text-decoration: none;
+                   
+                    font-size: 12px;
+                  ">Apply now!</button></center></td>
+            </tr>
+            <tr>
+                <td>20500</td>
+                <td>No</td>
+                <td>Engineering school</td>
+                <td>Seceatary</td>
+                <td>All</td>
+                <td><center><button class="Apply" style=" 
+                    background-color: #f0800c; 
+                    border: none;
+                    color: white;
+                    padding: 15px 15px;
+                    text-align: center;
+                    text-decoration: none;
+                   
+                    font-size: 12px;
+                  ">Apply now!</button></center></td>
+            </tr>
+           
+
+        </tbody>
+    </table>
+</div>
+    <script>
+        window.onload = () => {
+            console.log(document.querySelector("#emp-table > tbody > tr:nth-child(1) > td:nth-child(2) ").innerHTML);
+        };
+
+        getUniqueValuesFromColumn()
+        
+    </script>
+</div>
+</div>
+</body>
+
+</html>
